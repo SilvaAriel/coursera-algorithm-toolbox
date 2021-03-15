@@ -1,4 +1,5 @@
 # Uses python3
+import sys
 
 def calc_fib(n):
     if (n <= 1):
@@ -9,6 +10,8 @@ def calc_fib(n):
       return cache[n]
     return cache[n]
 
-cache = {}
-n = int(input())
-print(calc_fib(n))
+if __name__ == '__main__':
+  cache = {}
+  input = sys.stdin.read()
+  n = int(input)
+  print(calc_fib(n))
