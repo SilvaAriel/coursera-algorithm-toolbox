@@ -9,7 +9,7 @@ These are the algorithms I implemented for Coursera's  [Algorithm Toolbox course
 - [x] Least Common Multiple ([Python](https://github.com/SilvaAriel/coursera-algorithm-toolbox/blob/master/week2_algorithmic_warmup/4_least_common_multiple/lcm.py))
 - [x] Fibonacci Number Again ([Python](https://github.com/SilvaAriel/coursera-algorithm-toolbox/blob/master/week2_algorithmic_warmup/5_fibonacci_number_again/fibonacci_huge.py))
 - [x] Last Digit of the Sum of Fibonacci Numbers ([Python](https://github.com/SilvaAriel/coursera-algorithm-toolbox/blob/master/week2_algorithmic_warmup/6_last_digit_of_the_sum_of_fibonacci_numbers/fibonacci_sum_last_digit.py))
-- [ ] Last Digit of the Sum of Fibonacci Numbers Again ([Python](https://github.com/SilvaAriel/coursera-algorithm-toolbox/blob/master/week2_algorithmic_warmup/7_last_digit_of_the_sum_of_fibonacci_numbers_again/fibonacci_partial_sum.py))
+- [x] Last Digit of the Sum of Fibonacci Numbers Again ([Python](https://github.com/SilvaAriel/coursera-algorithm-toolbox/blob/master/week2_algorithmic_warmup/7_last_digit_of_the_sum_of_fibonacci_numbers_again/fibonacci_partial_sum.py))
 - [ ] Last Digit of the Sum of Squares of Fibonacci Numbers ([Python](https://github.com/SilvaAriel/coursera-algorithm-toolbox/blob/master/week2_algorithmic_warmup/8_last_digit_of_the_sum_of_squares_of_fibonacci_numbers/fibonacci_sum_squares.py))
 ## Week 3: Greedy Algorithms
 - [ ] Money Change

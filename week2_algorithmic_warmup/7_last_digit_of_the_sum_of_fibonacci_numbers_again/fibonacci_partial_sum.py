@@ -1,24 +1,18 @@
 # Uses python3
 import sys
 
-def fibonacci_partial_sum_naive(from_, to):
+def fib(b, n):
+
+    previous = 0
+    current = 1
     sum = 0
-
-    current = 0
-    next  = 1
-
-    for i in range(to + 1):
-        if i >= from_:
-            sum += current
-
-        current, next = next, current + next
-
+    for i in range(n):
+        if i >= b - 1:
+          sum += current
+        previous, current = current, previous + current
     return sum % 10
 
-
 if __name__ == '__main__':
-    # input = sys.stdin.read();
-    # from_, to = map(int, input.split())
-
-    from_, to = 10, 200
-    print(fibonacci_partial_sum_naive(from_, to))
+    input = sys.stdin.read()
+    b, n = map(int, input.split())
+    print(fib(b, n))
