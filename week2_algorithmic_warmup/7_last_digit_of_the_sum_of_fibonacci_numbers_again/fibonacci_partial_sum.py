@@ -22,7 +22,8 @@ def pisano_period(m):
 def fib_modulo(b, n):
   m_pisano = pisano_period(10)
   n_modulo_m_pisano = n % m_pisano
-  new_fib = fib(b, n_modulo_m_pisano)
+  b_modulo_m_pisano = b % m_pisano
+  new_fib = fib(b_modulo_m_pisano, n_modulo_m_pisano)
   return new_fib % 10
 
 if __name__ == '__main__':
