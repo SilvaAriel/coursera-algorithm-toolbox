@@ -1,32 +1,25 @@
 # Uses python3
 import sys
 
-def fib(b, n):
+def fib_mod_10(n):
+    if (n <= 1):
+        return n
+    
+    if (n not in cache):
+      cache[n] = fib_mod_10(n - 1) + fib_mod_10(n - 2)
+      return cache[n]
+    return cache[n]
 
-    previous = 0
-    current = 1
-    sum = 0
-    for i in range(n):
-        if i >= b - 1:
-          sum += current
-        previous, current = current, previous + current
-    return sum % 10
-
-def pisano_period(m):
-  previous, current = 0, 1
-  for i in range (0, m * m):
-    previous, current = current, (previous + current) % m
-    if previous == 0 and current == 1:
-      return i + 1
-
-def fib_modulo(b, n):
-  m_pisano = pisano_period(10)
-  n_modulo_m_pisano = n % m_pisano
-  b_modulo_m_pisano = b % m_pisano
-  new_fib = fib(b_modulo_m_pisano, n_modulo_m_pisano)
-  return new_fib % 10
+def last_digit_sum_fibonacci(b, n):
+  b = b % 60
+  n = b + (n - b) % 60
+  sum = 0
+  for i in range (b, n + 1):
+    sum += fib_mod_10(i)
+  return sum % 10
 
 if __name__ == '__main__':
+    cache = {}
     input = sys.stdin.read()
     b, n = map(int, input.split())
-    print(fib_modulo(b, n))
+    print(last_digit_sum_fibonacci(b, n))
