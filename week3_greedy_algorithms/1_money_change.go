@@ -5,7 +5,19 @@ import (
   )
 
 func getChange(m int) int {
-  return m;
+  current := m;
+  changes := 0;
+
+  changes += current / 10;
+  current = current % 10;
+
+  changes += current / 5;
+  current = current % 5;
+
+  changes += current / 1;
+  current = current % 1;
+
+  return changes;
 }
 
 func main() {
